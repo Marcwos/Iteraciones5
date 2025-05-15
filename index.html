@@ -17,11 +17,13 @@
         <label for="numero2">Segundo valor</label>
         <input type="number" name="numero2" id="numero2"><br><br>
 
-        <button onclick="calcular('sumar')">Sumar</button><br><br>
-        <button onclick="calcular('restar')">Restar</button><br><br>
-        <button onclick="calcular('multiplicar')">Multiplicar</button><br><br>
-        <button onclick="calcular('dividir')">Dividir</button><br><br>
-        <button onclick="calcular('mod')">Mod</button><br><br>
+        <div class="botones">
+            <button onclick="calcular('sumar')">Sumar</button>
+            <button onclick="calcular('restar')">Restar</button>
+            <button onclick="calcular('multiplicar')">Multiplicar</button>
+            <button onclick="calcular('dividir')">Dividir</button>
+            <button onclick="calcular('mod')">Mod</button>
+        </div>
 
         <p>Resultado: <span id="resultado"></span></p>
 
