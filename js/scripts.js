@@ -1,7 +1,18 @@
 function calcular(operacion) {
-    const num1 = parseFloat(document.getElementById("numero1").value);
-    const num2 = parseFloat(document.getElementById("numero2").value);
+    const input1 = document.getElementById("numero1").value.trim();
+    const input2 = document.getElementById("numero2").value.trim();
 
+    if (input1 === "" || input2 === "") {
+        alert("Por favor, ingrese ambos números antes de continuar.");
+        return;
+    }
+    const num1 = parseFloat(input1);
+    const num2 = parseFloat(input2);
+
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Los valores ingresados no son números válidos.");
+        return;
+    }
     let resultado;
 
     switch (operacion) {
